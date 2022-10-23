@@ -35,12 +35,12 @@ function script() {
 
 // *** function zum zeichen des Dreiecks
 function simpleTriangle() {
-  zeichnung.lineWidth = 3;
+ zeichnung.lineWidth = 3;
   zeichnung.strokeStyle = "Blue";
   zeichnung.beginPath();
   zeichnung.moveTo(leinwandBreite - randabstand, leinwandHoehe - randabstand);
   zeichnung.lineTo(300, randabstand);
   zeichnung.lineTo(randabstand, leinwandHoehe - randabstand);
-  zeichnung.lineTo(leinwandBreite, leinwandHoehe);
+  zeichnung.lineTo(leinwandBreite - randabstand, leinwandHoehe - randabstand);
   zeichnung.stroke();
 }
