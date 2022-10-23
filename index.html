@@ -1,0 +1,96 @@
+<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Dreiecksrechner-Nachname</title>
+	  <link rel="stylesheet" type="text/css" href="index.css">
+	</head>	
+	<body translate="no">
+	<fieldset id="rechner">
+		<legend class="reiter">Dreiecksrechner</legend>
+		<br>
+		<canvas id="graf"></canvas>
+		<!-- Erstellen eines Eingabefieldset mit Überschrift Eingabe -->
+		<fieldset id="eingabe">
+		<legend class="reiter" >Eingabe</legend>
+		<!-- Erstellen einer Tabelle-->
+			<table rules="hidden">
+			<!-- Erstellen einer Tabelenzeile -->
+			<tr>
+				<!-- Erstellen einer Tabellenspalte-->
+				<td>
+					<label class="label" for="hypothenuse">Hypothenuse: </label> 
+				</td>
+				<!-- Erstellen einer Tabellenspalte mit einer breite angeben für die richtige größe-->
+				<td style="width: 22%;">
+					<!-- Erstellen eines Input/output labels-->
+					<input class="input"  id="hypothenuse" type="number" step="0.01" value="25"> 
+				</td>
+				<td>
+					<label> mm</label>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label class="label" for="alpha"> Alpha: </label>
+				</td>
+				<td style="width: 22%;">
+					<input class="input" id="alpha" type="number" step="0.01" value="10">
+				</td>
+				<td>
+					<label>°</label>
+				</td>
+			</tr>
+			</table>
+		</fieldset>
+		<br>
+		<!-- Erstellen eines neuem fieldset für die Ausgabe-->
+		<fieldset class="Set" id="ausgabe">
+			<legend class="reiter" >Ausgabe</legend>
+			<!-- Erstellen einer Tabelle -->
+			<table id="tabletwo">
+				<!-- Erstellen einer Tabellenzeile-->
+				<tr>
+					<td>
+						<label class="label" for="beta">Beta: </label>
+					</td>
+					<!-- Erstellen einer Tabellenspalte-->
+					<td style="width: 24%;">
+						<input class="input" id="beta" type="number" step="0.01" value="10">
+					</td>
+					<td>
+						<label>°</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="label" for="alpha">Gegenkathete zu Alpha: </label>
+					</td>
+					<td style="width: 24%;">
+						<input class="input" id="Gegegenkathete_Alpha" type="number" step="0.01" value="0">
+					</td>
+					<td>
+						<label> mm</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label class="label" for="beta">Ankathete zu Alpha: </label>
+					</td>
+					<td style="width: 24%">
+						<input class="input" id="Ankathete_Alpha" type="number" step="0.01" value="0">
+					</td>	
+					<td>
+						<label> mm</label>
+					</td>
+				</tr>
+			</table>
+			<!-- Erstellen eines Button zum ausführen des berechnenscript-->
+			<input id="buttonbe" type="button" value="Berechnung" onclick='script();'>
+		</fieldset>
+		<!-- Einfügen eines Bilds-->
+		<img src="Logo_gr_tr.jpg" alt="bkt-logo">
+	</fieldset>
+	</body>
+	<!-- anhägen der js Datei damit die mit ausgeführt wird-->
+	<script src="script.js"></script>
+</html>

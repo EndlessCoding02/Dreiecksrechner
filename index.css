@@ -1,0 +1,58 @@
+/** . ist eine class und # eine ID**/
+
+/* anpassungen am ganzen body*/
+body {
+  background-color: #444;
+  color: white;
+}
+
+/* anpassungen des Bilds */
+img {
+	display: block;
+	margin: 20 auto 0 auto;
+	width: 150;
+}
+
+/* anpassungen an den fieldsets mit der ID rechner */
+#rechner {
+	width: 600px;
+	margin: 0 auto;
+	background-color: black;
+}
+
+/* anpassungen an den reitern */
+.reiter{
+	border: 1px solid white;
+	background-color: black;
+	color: white;
+	padding: 5px 10px;
+}
+
+/* anpassungen an dem Button */
+.buttonbe{
+	background-color: lightgray;
+	border-radius: 7px;
+	
+}
+
+.Set{
+	text-align: left +50px ;
+}
+
+/* anpassen der Inputlabels */
+.input{
+	max-width: 100px;
+	background-color: white;
+	padding-left: 1%;
+	padding-top: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+}
+
+input[type="number"]{
+	appearance: textfield;
+}
+
+input[type="number"]::wevkit-inner-spin-button{
+	appearance: none;
+}
